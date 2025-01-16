@@ -1,0 +1,11 @@
+import cv2
+import numpy as np
+from google.colab.patches import cv2_imshow
+
+imagem = cv2.imread('calhetas.jpg.jpg')
+img_cinza = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+img_cinza
+print('img_cinza', end='')
+cv2_imshow(imagem)
+print('img em escala de cinza', end='')
+cv2_imshow(img_cinza)
